@@ -22,7 +22,7 @@ def check_hashes(password,hashed_text):
 	return False
 # DB Management
 import sqlite3 
-conn = sqlite3.connect('data.db')
+conn = sqlite3.connect('streamlit-multipage-app-example-master/data.db')
 c = conn.cursor()
 # DB  Functions
 def create_usertable():
