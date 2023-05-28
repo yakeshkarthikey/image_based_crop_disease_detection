@@ -16,7 +16,7 @@ if x:
         st.write("input image")
         # st.image(image)
         img_array = np.array(image) # if you want to pass it to OpenCV
-        img = 'D:/Py/Bala_proj/color_img.jpg'
+        img = 'streamlit-multipage-app-example-master/color_img.jpg' 
         imsave(img, img_array)
         # st.image(image, caption="The caption", use_column_width=True)
         # array = np.reshape(img_array, (128, 128))
@@ -36,7 +36,7 @@ if x:
                 time.sleep(0.1)
             my_bar.progress(percent_complete + 1, text=progress_text)
             if o=='Rice':
-                model = load_model('D:/Py/Bala_proj/vgg16_rice.h5')
+                model = load_model('streamlit-multipage-app-example-master/vgg16_rice.h5')
                 batch_size = 16
                 image = imread(img)
                 img = Image.fromarray(image)
@@ -89,7 +89,7 @@ if x:
 
                         
             elif o=='Potato':
-                model = load_model('D:/Py/Bala_proj/vgg16_p.h5')
+                model = load_model('streamlit-multipage-app-example-master/vgg16_p.h5')
                 batch_size = 16
                 image = imread(img)
                 img = Image.fromarray(image)
@@ -135,7 +135,7 @@ if x:
                             and applying fungicides when necessary. Air drainage to facilitate the drying of foliage each day is important.''')
             
             elif o=='Maize':
-                model = load_model('D:/Py/Bala_proj/vgg16_maize.h5')
+                model = load_model('streamlit-multipage-app-example-master/vgg16_maize.h5')
                 batch_size = 16
                 image = imread(img)
                 img = Image.fromarray(image)
