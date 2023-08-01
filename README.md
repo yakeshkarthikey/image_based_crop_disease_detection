@@ -1,1 +1,1 @@
-# image_based_crop_disease_detection
+# image_based_crop_disease_detection_using_deep_learning
